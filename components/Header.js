@@ -6,13 +6,10 @@ import {
   Text
 } from 'react-native';
 
-const Header = ({
-  name
-}) => {
+const Header = () => {
   return (
     <View style={styles.container}>
-      <Image source={{ uri: 'https://randomuser.me/api/portraits/men/42.jpg' }} style={styles.image}></Image>
-      <Text style={styles.text}>{name}</Text>
+      <Text style={styles.text}>Tareas</Text>
     </View>
   )
 };
@@ -26,7 +23,8 @@ const styles = StyleSheet.create({
     height: 80,
     padding: 15,
     alignItems: 'center',
-    backgroundColor: '#087192',
+    justifyContent: 'center',
+    backgroundColor: '#40377F',
     flexDirection: 'row',
     marginBottom: 10
   },
@@ -37,8 +35,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#FFF',
-    fontSize: 20,
-    marginLeft: 20
+    fontSize: 20
   }
 });
 
